@@ -240,3 +240,32 @@ nav{
     color: blue;
 }
 
+/* cards end */
+/* footer start */
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    background-color: #0D1B2A;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-links{
+    display: flex;
+    gap: 25px;
+}
+footer p{
+    color: gray;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-links a:hover{
+    color: blue;
+}
