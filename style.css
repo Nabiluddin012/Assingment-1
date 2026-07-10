@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
 }
  /* nav start */
 nav{
@@ -38,7 +39,8 @@ nav{
     padding: 13px 29px;
     border: none;
     border-radius: 8px;
-    cursor :pointer
+    cursor :pointer;
+    font-weight: bold;
     
 }
 /* nav end */
@@ -85,6 +87,7 @@ nav{
     color: white;
     margin-left: 600px;
     margin-top: 200px;
+    font-weight: bold-
 
 }
 
@@ -134,5 +137,106 @@ nav{
 /* speakers-section end */
 
 
+.pricing-section{
+    padding: 100px 40px;
+    
+}
 
+.pricing-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-header h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.pricing-header p{
+    color: gray;
+}
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.card{
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2{
+    font-size: 48px;
+    margin-top: 15px;
+}
+
+.card span{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.card hr{
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.card ul{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.card ul li{
+    margin-bottom: 12px;
+    color:gray;
+}
+
+.card button{
+    margin-top: auto;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.standard-btn{
+    background-color: white;
+    border: 1px solid #2563eb !important;
+    color: #2563eb;
+}
+
+.pro-card{
+    background-color: #07162d;
+    color: white;
+}
+
+.pro-card span,
+.pro-card li{
+    color: #d6d6d6;
+}
+
+.pro-btn{
+    background-color: #2563eb;
+    color: white;
+}
+
+.team-btn{
+    background-color: white;
+    border: 1px solid black !important;
+}
+
+.card li::marker{
+    color: blue;
+}
 
