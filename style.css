@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* nav start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+.nav-button{
+    background-color: blue;
+    color:white
+}
+.items ul {
+    list-style: none;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-top: 15px;
+}
+.items ul li a {
+    text-decoration: none;
+    color: black;
+}
+.item ul li :hover{
+    color:blue;
+    
+}
+
+.nav-button{
+    padding: 13px 29px;
+    border: none;
+    border-radius: 8px;
+    cursor :pointer
+    
+}
+/* nav end */
+
+
