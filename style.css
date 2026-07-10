@@ -88,6 +88,51 @@ nav{
 
 }
 
+/* hero-section end */
+
+/* speaker-section start */ 
+
+.speaker-sections{
+    height: auto;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding:50px 150px;
+    
+}
+
+.speaker-sections div{
+   
+    height: 350px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+}
+
+.speaker-sections div img{
+    width: 100%;
+    height: 70%;
+}
+
+.speaker-sections div h4{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.speaker-sections div p{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.section-2 h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+
+}
+
+/* speakers-section end */
+
 
 
 
