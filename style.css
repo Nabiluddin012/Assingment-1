@@ -15,10 +15,9 @@ nav{
     top: 0;
     background-color: white;
 }
-.nav-button{
-    background-color: blue;
-    color:white
-}
+
+
+
 .items ul {
     list-style: none;
     display: flex;
@@ -41,19 +40,35 @@ nav{
     border-radius: 8px;
     cursor :pointer;
     font-weight: bold;
-    
+    background-color: blue;
+    color: white;
+    transition: 0.3s ease;
+
 }
+.nav-button:hover{
+    background-color: white;
+    color: blue;
+    transform: scale(1.05);
+    border: 1px  blue;
+}
+
 /* nav end */
 /* hero-section start */
 
 .hero-section{
     height: 700px;
     width: 100%;
-    background-image:linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.55)),
-                     url('./assets/banner.jpg');
+    background-image: linear-gradient(
+            to right,
+            rgba(0,0,0,0.85) 0%,
+            rgba(0,0,0,0.75) 20%,
+            rgba(0,0,0,0.55) 40%,
+            rgba(0,0,0,0.25) 65%,
+            rgba(0,0,0,0.05) 85%,
+            rgba(0,0,0,0) 100%,
+             transparent 100%  
+        ),
+        url('./assets/banner.jpg');
     
 }
 .hero-section{
@@ -87,8 +102,15 @@ nav{
     color: white;
     margin-left: 600px;
     margin-top: 200px;
-    font-weight: bold-
+    font-weight: bold;
+    transition: 0.3s ease;
 
+}
+.hero-section button:hover{
+    background-color: white;
+    color: blue;
+    transform: scale(1.05);
+    border: 1px  blue;
 }
 
 /* hero-section end */
@@ -98,7 +120,6 @@ nav{
 .speaker-sections{
     height: auto;
     width: 100%;
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -112,6 +133,13 @@ nav{
     width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 5px #000000;
+    transition: all 0.3s ease;
+}
+.speaker-sections div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    cursor: pointer;
+    border-radius: 8px 8px 8px 8px;
 }
 
 .speaker-sections div img{
@@ -172,6 +200,12 @@ nav{
     height: auto;
     display: flex;
     flex-direction: column;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .card h2{
@@ -214,8 +248,12 @@ nav{
     background-color: white;
     border: 1px solid #2563eb !important;
     color: #2563eb;
+    transition: 0.4s ease;
 }
-
+.standard-btn:hover{
+    background-color: #2563eb;
+    color: white;
+}
 .pro-card{
     background-color: #07162d;
     color: white;
@@ -229,11 +267,22 @@ nav{
 .pro-btn{
     background-color: #2563eb;
     color: white;
+    transition: 0.4s ease;
+}
+.pro-btn:hover{
+    background-color: white;
+    color: #2563eb;
+    border: 1px solid #2563eb !important;
 }
 
 .team-btn{
     background-color: white;
     border: 1px solid black !important;
+    transition: 0.4s ease;
+}
+.team-btn:hover{
+    background-color: black;
+    color: white;
 }
 
 .card li::marker{
@@ -241,6 +290,108 @@ nav{
 }
 
 /* cards end */
+
+/* untold section start */
+
+.faq-section{
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.faq-section h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.faq-section p{
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.faq-container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item{
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.faq-item h3{
+    margin-bottom: 10px;
+}
+
+.faq-item p{
+    margin: 0;
+    color: #555;
+}
+
+
+
+.faq-section{
+    padding: 60px 80px;
+    text-align: center;
+    background: #f8f9ff;
+}
+
+.faq-section h2{
+    font-size: 36px;
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.faq-section p{
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.faq-container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item{
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    text-align: left;
+    background: white;
+    transition: 0.3s ease;
+}
+
+.faq-item h3{
+    color: #222;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.faq-item p{
+    margin: 0;
+    color: #666;
+    transition: 0.3s ease;
+}
+
+.faq-item:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    background-color: #222;
+
+}
+
+.faq-item:hover h3{
+    color: #4f46e5;
+}
+
+.faq-item:hover p{
+    color: #e4dede;
+}
+
+
 /* footer start */
 
 
@@ -269,3 +420,74 @@ footer p{
 .footer-links a:hover{
     color: blue;
 }
+
+
+.contact-box{
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.contact-box:hover{
+    transform: scale(1.03);
+    background-color: rgba(90, 92, 190, 0.397);
+}
+
+.contact-box h3{
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.contact-box p{
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-box a{
+    display: inline-block;
+    text-decoration: none;
+    background: #4f46e5;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.contact-box a:hover{
+    background: #1d1c33;
+    transform: scale(1.05);
+}
+
+.faq-line{
+    width: 80%;
+    height: 4px;
+    background: #4f46e5;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.faq-item:nth-child(odd) {
+    animation: slideLeft 1s ease forwards;
+}
+
+.faq-item:nth-child(even) {
+    animation: slideRight 1s ease forwards;
+}
+
+.contact-box {
+    animation: zoomIn 1s ease forwards;
+}
+
+
+
+
+
+/* footer end */
+
+
+
+
+

@@ -8,10 +8,14 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">  
+
 </head>
+
 <body>
-    <header>
+
+<header>
         <nav>
             <div class="logo"><img src="./assets/logo.png" alt="logo item"></div>
             <div class="items">
@@ -21,17 +25,16 @@
                     <li><a href="#">Tracks</a></li>
                     <li><a href="#">Venue</a></li>
                     <li><a href="#">Blog</a></li>
-                
                 </ul>
             </div>
             <div class="buton"> <button class="nav-button">Register Now</button></div>
         </nav>
-    </header>
+</header>
 
     
-    <main>
+<main>
 
-        <section class="hero-section">
+    <section class="hero-section">
 
         <h1>Code. Connect. Create</h1>
         <p>Join 4,000+ engineers, founders, 
@@ -39,66 +42,59 @@
             conference of 2026. Three days of cutting-edget, alks, 
             hands-on workshops,<br> and meaningful connections.</p>
 
-            <button>Register Now</button>
-        </section>
+        <button>Register Now</button>
+    </section>
 
 
-        <section class="section-2">
-                <h1>Meet the Speakers</h1>
-
-             <div class="speaker-sections">
-        <div>
-            <img src="./assets/andrej.png" alt="">
-            <p style="color: blue;">AI / ML</p>
-            <h4>Andrej Karpathy</h4>
-            <p style="padding-top: 10px;">Pretraining team, Anthropic</p>
-        </div>
+    <section class="section-2">
+            <h1>Meet the Speakers</h1>
+            <div class="speaker-sections">
+                <div>
+                    <img src="./assets/andrej.png" alt="">
+                    <p style="color: blue;">AI / ML</p>
+                    <h4>Andrej Karpathy</h4>
+                    <p style="padding-top: 10px;">Pretraining team, Anthropic</p>
+                </div>
         
 
-        <div>
-          <img src="./assets/demis.png" alt="">
-            <p style="color: blue;">Cloud & DevOps</p>
-            <h4>Demis Hassabis</h4>
-            <p style="padding-top: 10px;">Co-Founder and CEO, Google DeepMind</p>
-        </div>
+                <div>
+                <img src="./assets/demis.png" alt="">
+                    <p style="color: blue;">Cloud & DevOps</p>
+                    <h4>Demis Hassabis</h4>
+                    <p style="padding-top: 10px;">Co-Founder and CEO, Google DeepMind</p>
+                </div>
 
 
-        <div><img src="./assets/gary.png" alt="">
-            <p style="color: blue;">Frontend </p>
-            <h4>Demis Hassabis</h4>
-            <p style="padding-top: 10px;">Co-Founder and CEO, Google DeepMind</p>
-        </div>
-
-
-        <div>
-        <img src="./assets/mustafa.png" alt="">
-        <p style="color: blue;" >Security</p>
-        <h4>Mustafa Suleyman</h4>
-        <p style="padding-top: 10px;">CEO of Microsoft AI</p>
-        </div>
-
-       </div>
-
-        </section>
+                <div><img src="./assets/gary.png" alt="">
+                    <p style="color: blue;">Frontend </p>
+                    <h4>Demis Hassabis</h4>
+                    <p style="padding-top: 10px;">Co-Founder and CEO, Google DeepMind</p>
+                </div>
+                <div>
+                    <img src="./assets/mustafa.png" alt="">
+                    <p style="color: blue;" >Security</p>
+                    <h4>Mustafa Suleyman</h4>
+                    <p style="padding-top: 10px;">CEO of Microsoft AI</p>
+                </div>
+            </div>
+     </section>
 
 
         
 
     
     <section class="pricing-section">
+        <div class="pricing-header">
+            <h1>Secure Your Spot</h1>
+            <p>Early-bird pricing ends August 15, 2026.</p>
+        </div>
 
-    <div class="pricing-header">
-        <h1>Secure Your Spot</h1>
-        <p>Early-bird pricing ends August 15, 2026.</p>
-    </div>
+        <div class="pricing-container">
+            <div class="card">
+                <p class="plan">STANDARD</p>
 
-    <div class="pricing-container">
-
-        <div class="card">
-            <p class="plan">STANDARD</p>
-
-            <h2>$399</h2>
-            <span>per person</span>
+                <h2>$399</h2>
+                <span>per person</span>
 
             <hr>
 
@@ -156,16 +152,63 @@
             <button class="team-btn">Contact Us</button>
         </div>
 
-    </div>
+        </div>
 
-</section>
+    </section>
     
         
 
+   
+
+
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <p>Everything you need to know before joining DevConf 2026.</p>
+    
+        <div class="faq-line"></div>   
+
+    <div class="faq-container">
+            
+        <div class="faq-item" data-aos="fade-right">
+            <h3><span>1.</span>Who can attend DevConf 2026❓</h3>
+            <p>Developers, students, designers and tech enthusiasts are welcome to join.</p>
+        </div>
+
+        <div class="faq-item" data-aos="fade-left">
+            <h3><span>2.</span>Will sessions be recorded❓</h3>
+            <p>Yes, all keynote sessions will be available after the event.</p>
+        </div>
+
+        <div class="faq-item" data-aos="fade-right">
+            <h3><span>3.</span>Do I need prior experience to attend workshops❓</h3>
+            <p>No, workshops are designed for both beginners and experienced developers.</p>
+        </div>
+
+        <div class="faq-item" data-aos="fade-left">
+            <h3><span>4.</span>Where will the event take place❓</h3>
+            <p>The event venue details will be shared with registered participants.</p>
+        </div>
+
+        <div class="faq-item" data-aos="fade-right">
+            <h3> <span>5.</span>Will there be networking opportunities❓</h3>
+            <p>Yes! DevConf 2026 includes networking sessions where attendees can connect with developers, speakers, and industry professionals.</p>
+        </div>
+
+        <div class="faq-item" data-aos="fade-left">
+            <h3>Where will DevConf 2026 take place📍❓</h3>
+            <p>DevConf 2026 will be hosted at the International Convention Center in Dhaka, Bangladesh.</p>
+        </div>
+
+        <div class="contact-box" data-aos="zoom-in">
+            <h3>Still Have Questions?</h3>
+            <p>Our team is here to help you with anything related to DevConf 2026.</p>
+            <a href="#">Contact Us</a>
+        </div>
+ 
+
     </div>
-    </section>     
-
-
+</section>
     
 </main>
 
@@ -174,9 +217,15 @@
 
     <div class="footer-links">
         <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-    </div>
+        <a href="#">Terms and Service</a>  
+     </div>
 </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
